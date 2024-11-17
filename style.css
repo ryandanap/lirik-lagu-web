@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    background: #ddd;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #ddd;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 600px;
+}
+
+.box {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.459));
+    box-shadow: 0px 1px 2px rgb(67 67 67 / 68);
+    border-radius: 0 0 6px 6px;
+    position: relative;
+}
+
+form input {
+    background: #f6f6f5;
+    margin-bottom: 20px;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    min-width: 250px;
+}
+
+.btn {
+    background: linear-gradient(105deg, #69f76d, #00ad11);
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.04px;
+    text-transform: uppercase;
+    min-height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: linear-gradient(105deg, #00ad11, #69f76d);
+}
+
+.box-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-lyrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-lyrics p {
+    padding-top: 2rem;
+
+} 
+
+
+.result-box {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box ul {
+    padding: 20px;
+}
+
+.result-box ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.result-box ul li img {
+    max-width: 80px;
+    float: left;
+    border-radius: 4px;
+}
+
+.result-box ul li span {
+    background: #ddd;
+    color: #222;
+    padding: 5px 18px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top: 60px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.result-box ul li span:hover {
+    background: linear-gradient(105deg, #00ad11, #69f76d);
+    color: #fff;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Beri jarak antara nama artist dan title lagu */
+}
+
+.song-title {
+    font-size: 12px;
+    color: #ccc;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.back-lyrics {
+    position: fixed; /* Tetap di posisi yang sama saat scroll */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    background: #00ad11; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 10px 15px; /* Spasi dalam */
+    border-radius: 50px; /* Membuat tombol bulat atau oval */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    cursor: pointer; /* Menunjukkan elemen dapat diklik */
+    display: flex; /* Untuk tata letak konten di dalam tombol */
+    align-items: center; /* Pusatkan secara vertikal */
+    gap: 5px; /* Jarak antara ikon dan teks */
+    font-size: 14px; /* Ukuran teks */
+    z-index: 1000; /* Memastikan elemen ada di atas elemen lain */
+}
+
+.back-lyrics:hover {
+    background: #ddd;
+    color: #000;
+}

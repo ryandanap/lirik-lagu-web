@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="HandhelFriendly" content="true">
+
+    <meta name="description" content="Search Song Lyrics App is one more valuable project among 7 Useful JS Projects by Ryan">
+    <title>Lirik lagu</title>
+
+    <link rel="short icon" href="https://cdn4.iconfinder.com/data/icons/green-shopper/1049/music.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>Cari Lirik</h1>
+            <form action="" id="form">
+                <input type="search" id="search" placeholder="nama artis atau judul lagu...">
+                <button class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path></svg>
+                </button>
+            </form>
+        </div>
+
+        <section class="result-box" id="result"></section>
+        <!-- <ul class="song-list">
+            ${data.data.map(song =>`
+            <li>
+                <div class="">
+                    <img src="${song.artist.picture}" alt="${song.artist.name}">
+                    <strong>${song.artist.name}</strong>
+                </div>
+                <span data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</span>
+            </li>
+            `)
+            .join(``);
+        }
+        </ul> -->
+
+        <!-- <div class="full-lyrics">
+            <div class="back-lyrics">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="rgba(255,255,255,1)"><path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"></path></svg>
+            </div>
+            <h2>${artist} - ${songTitle}</h2>
+            <p>${lyrics}</p>
+        </div> -->
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
